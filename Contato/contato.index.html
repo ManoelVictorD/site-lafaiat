@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contato</title>
+</head>
+<body>
+    <a href="#content" class="skip-link">Pular para o conteúdo</a>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <img src="logotipo.png" alt="Logo L'Afaiat">
+            </div><!--logo-->
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#trabalheconosco">Trabalhe Conosco</a></li> <!-- Adicionando o link para a página "Trabalhe Conosco" -->
+
+                </ul>
+            </nav>
+            <a href="contato.index.html">
+                <button id="btn-top">Entre em contato</button>
+            </a>
+        </header>
+
+        <div class="container-text">
+            <h1>Fale Conosco</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Telefone: (11) 4607-5155</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: contato@lafaiat.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Endereço: Av. Fernando Arens, 935 - Jundiaí - SP</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp: (11) 4607-5155</p>
+                </div>
+            </div>
+        
+            <form id="contato" action="mailto:contato@lafaiat.com" method="post" enctype="text/plain">
+                <label for="full-name">Nome Completo *</label>
+                <input type="text" id="full-name" name="full-name" required>
+        
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Telefone *</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        
+        
+            </form>
+        </div><!--container-text-->
+    </div><!--background-->
+    <footer>
+        <p>&copy; 2024 L'Afaiat. Todos os direitos reservados.</p>
+    </footer>
+    <script type="text/javascript" src="contato.script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>

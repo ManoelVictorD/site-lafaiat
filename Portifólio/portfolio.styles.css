@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    position: relative;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+nav a {
+    color: #fff;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #767a78;
+    transition: 0.3s all;
+}
+
+.logo i {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #767a78;
+    color: #767a78;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button {
+    color: #767a78;
+    background: transparent;
+    border: solid 1px #767a78;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #767a78;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container-text {
+    background-color: #f0f0f0; /* Fundo cinza */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.portfolio-left,
+.portfolio-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-left h1,
+.portfolio-right h1 {
+    font-size: 24px;
+    color: #767a78; /* Cor preta */
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+/* Estilos para o portfólio */
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; /* Aumentando a margem entre os itens */
+}
+
+.portfolio-left,
+.portfolio-right {
+    flex-basis: 48%;
+    text-align: center;
+}
+
+.portfolio-left h1,
+.portfolio-right h1 {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px; /* Reduzindo o tamanho da fonte */
+    color: #333;
+}
+
+.portfolio-left img,
+.portfolio-right img {
+    display: block;
+    width: 100%;
+    max-width: 150px; /* Reduzindo ainda mais o tamanho máximo das imagens */
+    height: auto;
+   
+    transition: transform 0.3s ease; /* Adicionando uma transição suave */
+}
+
+.portfolio-left img:hover,
+.portfolio-right img:hover {
+    transform: scale(1.50); /* Efeito de zoom ao passar o mouse */
+}
+
+.separator {
+    height: 1px; /* Reduzindo a altura da linha */
+    width: 100%;
+    background-color: #ccc;
+    margin: 60px 0; /* Aumentando a margem para separar os itens */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Adicione ou modifique conforme necessário */
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    flex-basis: calc(50% - 50px);
+    margin: 10px;
+    display: flex;
+}
+
+.portfolio-left,
+.portfolio-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-left img,
+.portfolio-right img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-left img:hover,
+.portfolio-right img:hover {
+    transform: scale(1.50);
+}
+
+
+
+
+
+
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-left,
+.portfolio-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-left img,
+.portfolio-right img {
+    display: block;
+    width: 100%;
+    max-width: 150px; /* Reduzindo o tamanho máximo das imagens */
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento entre as imagens */
+}

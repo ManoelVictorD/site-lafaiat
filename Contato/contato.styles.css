@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative; /* Adicionado para facilitar o posicionamento do link de pular para o conteúdo */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    position: relative; /* Adicionado para facilitar o posicionamento do link de pular para o conteúdo */
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+nav a {
+    color: #fff;
+    font-size: 12px;
+}
+
+nav a:hover {
+    color: #767a78;
+    transition: 0.3s all;
+}
+
+.logo i {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #767a78;
+    color: #767a78;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button {
+    color: #767a78;
+    background: transparent;
+    border: solid 1px #767a78;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #767a78;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container-text {
+    padding: 50px;
+    color: #fff;
+    color: #767a78;
+    background: transparent;
+    border: solid 1px #767a78;
+    padding: 30px; /* Aumento do espaço do fundo */
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px; /* Limite de largura */
+    margin: 0 auto; /* Centralização */
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap; /* Quebra de linha para itens menores */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+#contato {
+    width: 100%; /* Largura total */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-top: 20px; /* Espaçamento entre o texto e o formulário */
+}
+
+#contato h1 {
+    text-align: center;
+    color: #333;
+}
+
+#contato label {
+    color: #767a78;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato input[type="tel"],
+#contato textarea {
+    width: calc(100% - 20px); /* Largura total menos o padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contato button {
+    width: calc(100% - 20px); /* Largura total menos o padding */
+    padding: 10px;
+    background-color: #767a78;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaçamento entre os campos e o botão */
+}
+
+#contato button:hover {
+    background-color: #767a78;
+}
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+.container-text {
+    padding: 50px;
+    color: #fff;
+    color: #767a78;
+    background: transparent;
+    border: solid 1px #767a78;
+    padding: 30px; /* Aumento do espaço do fundo */
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px; /* Limite de largura */
+    margin: 0 auto; /* Centralização */
+}
+
+.contact-info {
+    margin-bottom: 20px; /* Espaço entre os contatos da Lafaiat e o formulário */
+}
+
+.contact-info .contact-item {
+    margin-bottom: 10px; /* Espaço entre os itens de contato */
+}
+
+#contato button {
+    background-color: transparent; /* Fundo transparente */
+    color: #767a78; /* Cor do texto */
+    border: 1px solid #767a78; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer;
+    width: 100%; /* Largura total */
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O caminho para o arquivo CSS deve ser o mesmo usado na página "Portfólio" -->
+    <link rel="stylesheet" href="trabalheconosco.style.css">
+    <title>Trabalhe Conosco</title>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <img src="logotipo.png" alt="Logo L'Afaiat">
+            </div><!--logo-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+            <button id="btn-top">Entre em contato</button>
+        </header>
+<main class="content-box left-bg">
+    <h2>Junte-se à nossa equipe</h2>
+    <p>Pronto para transformar sua paixão por moda em uma carreira brilhante? Envie seu currículo e conte-nos como você pode contribuir para a nossa jornada de inovação e excelência.</p>
+    
+    <div class="form-container">
+        <form action="processa-candidatura.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="curriculo">Anexe seu currículo (PDF, máximo 2MB):</label>
+                <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
+            </div>
+            
+            <input type="submit" value="Enviar Candidatura">
+        </form>
+    </div>
+</main>
+
+        <footer>
+            <p>© 2024 L'Afaiat. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <!-- O caminho para o arquivo JavaScript deve ser o mesmo usado na página "Portfólio" -->
+    <script src="trabalheconosco.script.js"></script>
+</body>
+</html>

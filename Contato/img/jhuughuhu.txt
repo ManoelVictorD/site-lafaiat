@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>layout</title>
+</head>
+<body>
+
+    <div class="background">
+        <header>
+            <div class="logo">
+                <img src="logotipo.png" alt="Logo L'Afaiat">
+            </div><!--logo-->
+
+            <div class="cabeçalho-link">
+                <li>
+                    <a href="#sobre-nos">Sobre Nós</a>
+                </li>
+
+                <li>
+                    <a href="#portifolio">Portfólio</a>
+                </li>
+
+                <li>
+                    <a href="#clientes">Nossos Clientes</a>
+                </li>
+
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#depoimentos">Depoimentos</a>
+                </li>
+
+                <li>
+                    <button id="btn-top">Entre em contato</button>
+                </li>
+            </div><!--cabeçalho-link-->
+        </header>
+
+        <div class="container-text">  
+            <div class="text">
+                <div class="container-text">  
+                    <div class="text">
+                        <h3>Descubra a</h3>
+                        <h1><span>Essência</span> da L'Afaiat</h1>
+                        <p>Roupas que expressam sua identidade<br>e elevam sua confiança.</p>
+                        <div class="redes-social">
+                            <a href="https://www.facebook.com/lafaiat.confeccoes/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/lafaiat.confeccoes/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </div><!--redes-social-->
+                        <button class="btn">Conheça mais</button>
+                    </div><!--text-->
+                </div><!--container-text-->
+                
+        </div><!--container-text-->
+    </div><!--background-->
+
+    <footer>
+        <p>&copy; 2024 L'Afaiat. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <section id="sobre-nos">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa História</h3>
+                    <p>A L'Afaiat nasceu do sonho de seu fundador, Félix Dechamps, de criar roupas que transmitissem elegância e empoderamento feminino. O ateliê modesto, inicialmente dedicado à confecção sob medida, logo se destacou pelo seu compromisso com a qualidade e design exclusivo.</p>
+                    <p>Com o tempo, a demanda cresceu e a L'Afaiat expandiu suas operações para atender pequenas e médias empresas do ramo de moda feminina. Hoje, somos uma referência no mercado, oferecendo coleções exclusivas que vestem mulheres empoderadas em todo o país.</p>
+            
+                </div>
+                <div class="mission-vision-values">
+                    <h3>Missão</h3>
+                    <p>Nossa missão é transformar os sonhos de nossos clientes em realidade, criando peças únicas que refletem sua identidade e estilo. Trabalhamos em estreita colaboração com cada marca para entender suas necessidades e criar coleções que as diferenciem da concorrência.</p>
+                    <h3>Visão</h3>
+                    <p>Nossa visão é ser reconhecida como a parceira preferida das marcas de moda feminina, oferecendo soluções criativas e sustentáveis que impulsionem seu sucesso no mercado. Estamos comprometidos em ajudar nossos clientes a alcançar seus objetivos de negócios e conquistar o coração de seus consumidores.</p>
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Qualidade: Comprometemo-nos a oferecer produtos de alta qualidade, desde a seleção dos tecidos até o acabamento final.</li>
+                        <li>Empoderamento: Acreditamos no poder da moda para empoderar mulheres e promover a diversidade e inclusão.</li>
+                        <li>Inovação: Buscamos constantemente inovar em nossos processos e produtos para atender às necessidades em constante evolução de nossos clientes.</li>
+                        <li>Sustentabilidade: Nosso compromisso com a sustentabilidade guia nossas decisões, desde a produção até o descarte responsável.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+a
+
+
+
+
+
+
+CSS:@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    body {
+        max-height: 100vh; /* Define a altura máxima do corpo como 100% da altura da viewport */
+        overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+        overflow-y: auto; /* Habilita a rolagem vertical quando o conteúdo ultrapassar a altura máxima */
+    }
+    
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;  
+}
+
+.cabeçalho-link a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover{
+    color:  #767a78;
+    transition: 0.3s all;
+}
+
+.logo i{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #767a78;
+    color: #767a78;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button{
+    color: #767a78;
+    background: transparent;
+    border:solid 1px #767a78;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover{
+    background-color: #767a78;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container-text{
+    padding: 150px 0 0 130px;
+}
+
+.text h3{
+    color: #fff;
+    font-size: 15px;
+}
+
+.text h1{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.text span{
+    color: #767a78; 
+}
+
+.text p{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.redes-social{
+    margin-top: 10px;
+}
+
+.redes-social a{
+    color: #767a78;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+@media screen and (max-width:600px){
+    .cabeçalho-link {
+        display: none;
+    }
+}
+footer {
+    background-color: #333;
+    color: #ccc; /* Alterando a cor do texto para torná-lo mais discreto */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Reduzindo o tamanho do texto */
+    font-weight: lighter; /* Deixando o texto mais fino */
+}
+/* Estilos para a seção Sobre Nós */
+
+#sobre {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.mission-vision-values {
+    width: 35%;
+}
+
+.mission-vision-values h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mission-vision-values p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.mission-vision-values ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.mission-vision-values ul li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Estilo das seções "Sobre Nós", "Missão", "Visão" e "Valores" */
+section {
+    padding: 50px 0;
+}
+
+.about-text,
+.mission-vision-values {
+    background-color: rgba(230, 230, 230, 0.8);
+    padding: 20px;
+    border: 2px solid #767a78;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+    
+
+ JS:
+
+var typed = new typed("#typed",{
+    strings:["Manoel Victor Duarte.","Web Developer.","Front-end Developer.","Acadêmico de Ciência da Computação."],
+    typeSpeed: 70,
+    backSpeed: 60,
+    loop: true
+});
+
+
+const navLinks = document.querySelectorAll('nav a');
+const sections = document.querySelectorAll('main section');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+
+    window.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: 'smooth'
+    });
+  });
+});
